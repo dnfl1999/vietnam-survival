@@ -3,6 +3,8 @@ import SwiftUI
 enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
     case hospitalPharmacy
     case taxiGrab
+    case airportImmigration
+    case hotelAccommodation
     case foodOrder
     case priceNegotiation
     case emergency
@@ -14,6 +16,8 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         switch self {
         case .hospitalPharmacy: return "병원/약국"
         case .taxiGrab: return "택시/그랩"
+        case .airportImmigration: return "공항/입국"
+        case .hotelAccommodation: return "호텔/숙소"
         case .foodOrder: return "음식 주문"
         case .priceNegotiation: return "가격 흥정"
         case .emergency: return "위험 상황"
@@ -25,6 +29,8 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         switch self {
         case .hospitalPharmacy: return "cross.case.fill"
         case .taxiGrab: return "car.fill"
+        case .airportImmigration: return "airplane"
+        case .hotelAccommodation: return "bed.double.fill"
         case .foodOrder: return "fork.knife"
         case .priceNegotiation: return "tag.fill"
         case .emergency: return "exclamationmark.triangle.fill"
@@ -36,6 +42,8 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         switch self {
         case .hospitalPharmacy: return .blue
         case .taxiGrab: return .green
+        case .airportImmigration: return .cyan
+        case .hotelAccommodation: return .mint
         case .foodOrder: return .orange
         case .priceNegotiation: return .teal
         case .emergency: return .red
@@ -47,6 +55,8 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         switch self {
         case .hospitalPharmacy: return "증상 설명과 진료 도움"
         case .taxiGrab: return "이동 중 자주 쓰는 말"
+        case .airportImmigration: return "입국과 공항 이동 표현"
+        case .hotelAccommodation: return "체크인과 객실 요청 표현"
         case .foodOrder: return "식당과 배달 주문 표현"
         case .priceNegotiation: return "시장과 상점 흥정 표현"
         case .emergency: return "급한 상황에서 바로 사용"
