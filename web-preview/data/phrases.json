@@ -33,6 +33,27 @@
       "accentColor": "mint"
     },
     {
+      "id": "shopping",
+      "title": "쇼핑",
+      "systemImage": "bag.fill",
+      "shortDescription": "옷, 기념품, 생필품 구매 표현",
+      "accentColor": "pink"
+    },
+    {
+      "id": "bankingPayment",
+      "title": "은행/결제",
+      "systemImage": "creditcard.fill",
+      "shortDescription": "ATM, 카드, 송금 관련 표현",
+      "accentColor": "brown"
+    },
+    {
+      "id": "directions",
+      "title": "길 묻기",
+      "systemImage": "map.fill",
+      "shortDescription": "장소 찾기와 위치 확인 표현",
+      "accentColor": "purple"
+    },
+    {
       "id": "foodOrder",
       "title": "음식 주문",
       "systemImage": "fork.knife",
@@ -652,6 +673,294 @@
       "korean": "세탁 서비스가 있나요?",
       "vietnamese": "Có dịch vụ giặt là không?",
       "vietnamesePlain": "Co dich vu giat la khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_1",
+      "category": "shopping",
+      "korean": "이거 입어봐도 되나요?",
+      "vietnamese": "Tôi thử cái này được không?",
+      "vietnamesePlain": "Toi thu cai nay duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_2",
+      "category": "shopping",
+      "korean": "조금 더 큰 사이즈 있나요?",
+      "vietnamese": "Có size lớn hơn không?",
+      "vietnamesePlain": "Co size lon hon khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_3",
+      "category": "shopping",
+      "korean": "조금 더 작은 사이즈 있나요?",
+      "vietnamese": "Có size nhỏ hơn không?",
+      "vietnamesePlain": "Co size nho hon khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_4",
+      "category": "shopping",
+      "korean": "다른 색도 있나요?",
+      "vietnamese": "Có màu khác không?",
+      "vietnamesePlain": "Co mau khac khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_5",
+      "category": "shopping",
+      "korean": "정품 맞나요?",
+      "vietnamese": "Đây là hàng chính hãng phải không?",
+      "vietnamesePlain": "Day la hang chinh hang phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_6",
+      "category": "shopping",
+      "korean": "포장해 주세요",
+      "vietnamese": "Gói giúp tôi nhé.",
+      "vietnamesePlain": "Goi giup toi nhe.",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_7",
+      "category": "shopping",
+      "korean": "선물용이라 예쁘게 포장해 주세요",
+      "vietnamese": "Đây là quà tặng, gói đẹp giúp tôi nhé.",
+      "vietnamesePlain": "Day la qua tang, goi dep giup toi nhe.",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_8",
+      "category": "shopping",
+      "korean": "영수증 꼭 필요해요",
+      "vietnamese": "Tôi cần hóa đơn nhé.",
+      "vietnamesePlain": "Toi can hoa don nhe.",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_9",
+      "category": "shopping",
+      "korean": "환불이나 교환 되나요?",
+      "vietnamese": "Có đổi hoặc trả hàng được không?",
+      "vietnamesePlain": "Co doi hoac tra hang duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_10",
+      "category": "shopping",
+      "korean": "이거 새 제품으로 주세요",
+      "vietnamese": "Cho tôi sản phẩm mới nhé.",
+      "vietnamesePlain": "Cho toi san pham moi nhe.",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_11",
+      "category": "shopping",
+      "korean": "재고가 더 있나요?",
+      "vietnamese": "Còn hàng không?",
+      "vietnamesePlain": "Con hang khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "shopping_12",
+      "category": "shopping",
+      "korean": "이 제품 설명 좀 부탁드려요",
+      "vietnamese": "Giải thích sản phẩm này giúp tôi.",
+      "vietnamesePlain": "Giai thich san pham nay giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_1",
+      "category": "bankingPayment",
+      "korean": "ATM이 어디예요?",
+      "vietnamese": "ATM ở đâu?",
+      "vietnamesePlain": "ATM o dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_2",
+      "category": "bankingPayment",
+      "korean": "카드 결제가 안 돼요",
+      "vietnamese": "Thẻ của tôi không thanh toán được.",
+      "vietnamesePlain": "The cua toi khong thanh toan duoc.",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_3",
+      "category": "bankingPayment",
+      "korean": "현금 인출하고 싶어요",
+      "vietnamese": "Tôi muốn rút tiền mặt.",
+      "vietnamesePlain": "Toi muon rut tien mat.",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_4",
+      "category": "bankingPayment",
+      "korean": "수수료가 얼마예요?",
+      "vietnamese": "Phí là bao nhiêu?",
+      "vietnamesePlain": "Phi la bao nhieu?",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_5",
+      "category": "bankingPayment",
+      "korean": "카드가 기계에 먹혔어요",
+      "vietnamese": "Thẻ của tôi bị máy giữ lại.",
+      "vietnamesePlain": "The cua toi bi may giu lai.",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_6",
+      "category": "bankingPayment",
+      "korean": "송금할 수 있나요?",
+      "vietnamese": "Có thể chuyển tiền được không?",
+      "vietnamesePlain": "Co the chuyen tien duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_7",
+      "category": "bankingPayment",
+      "korean": "QR 결제 되나요?",
+      "vietnamese": "Có thanh toán bằng mã QR không?",
+      "vietnamesePlain": "Co thanh toan bang ma QR khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_8",
+      "category": "bankingPayment",
+      "korean": "결제가 두 번 된 것 같아요",
+      "vietnamese": "Hình như bị thanh toán hai lần.",
+      "vietnamesePlain": "Hinh nhu bi thanh toan hai lan.",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_9",
+      "category": "bankingPayment",
+      "korean": "승인 취소해 주세요",
+      "vietnamese": "Hủy giao dịch giúp tôi.",
+      "vietnamesePlain": "Huy giao dich giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_10",
+      "category": "bankingPayment",
+      "korean": "카드 비밀번호를 입력해야 하나요?",
+      "vietnamese": "Tôi có cần nhập mã PIN không?",
+      "vietnamesePlain": "Toi co can nhap ma PIN khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_11",
+      "category": "bankingPayment",
+      "korean": "달러로 환전할 수 있나요?",
+      "vietnamese": "Có thể đổi sang đô la Mỹ không?",
+      "vietnamesePlain": "Co the doi sang do la My khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "bank_12",
+      "category": "bankingPayment",
+      "korean": "거래 내역 확인서가 필요해요",
+      "vietnamese": "Tôi cần giấy xác nhận giao dịch.",
+      "vietnamesePlain": "Toi can giay xac nhan giao dich.",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_1",
+      "category": "directions",
+      "korean": "이 주소가 어디인지 아세요?",
+      "vietnamese": "Bạn có biết địa chỉ này ở đâu không?",
+      "vietnamesePlain": "Ban co biet dia chi nay o dau khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_2",
+      "category": "directions",
+      "korean": "여기서 걸어서 얼마나 걸려요?",
+      "vietnamese": "Đi bộ từ đây mất bao lâu?",
+      "vietnamesePlain": "Di bo tu day mat bao lau?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_3",
+      "category": "directions",
+      "korean": "오른쪽으로 가면 되나요?",
+      "vietnamese": "Rẽ phải là được phải không?",
+      "vietnamesePlain": "Re phai la duoc phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_4",
+      "category": "directions",
+      "korean": "왼쪽으로 가면 되나요?",
+      "vietnamese": "Rẽ trái là được phải không?",
+      "vietnamesePlain": "Re trai la duoc phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_5",
+      "category": "directions",
+      "korean": "직진하면 되나요?",
+      "vietnamese": "Đi thẳng là được phải không?",
+      "vietnamesePlain": "Di thang la duoc phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_6",
+      "category": "directions",
+      "korean": "가까운 편의점이 어디예요?",
+      "vietnamese": "Cửa hàng tiện lợi gần nhất ở đâu?",
+      "vietnamesePlain": "Cua hang tien loi gan nhat o dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_7",
+      "category": "directions",
+      "korean": "가까운 약국이 어디예요?",
+      "vietnamese": "Nhà thuốc gần nhất ở đâu?",
+      "vietnamesePlain": "Nha thuoc gan nhat o dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_8",
+      "category": "directions",
+      "korean": "지하철역이 어디예요?",
+      "vietnamese": "Ga metro ở đâu?",
+      "vietnamesePlain": "Ga metro o dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_9",
+      "category": "directions",
+      "korean": "버스 정류장이 어디예요?",
+      "vietnamese": "Trạm xe buýt ở đâu?",
+      "vietnamesePlain": "Tram xe buyt o dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_10",
+      "category": "directions",
+      "korean": "지도에서 표시해 주실 수 있나요?",
+      "vietnamese": "Bạn có thể chỉ trên bản đồ giúp tôi không?",
+      "vietnamesePlain": "Ban co the chi tren ban do giup toi khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_11",
+      "category": "directions",
+      "korean": "제가 길을 잃은 것 같아요",
+      "vietnamese": "Tôi nghĩ tôi bị lạc đường rồi.",
+      "vietnamesePlain": "Toi nghi toi bi lac duong roi.",
+      "isEmergency": false
+    },
+    {
+      "id": "directions_12",
+      "category": "directions",
+      "korean": "이 건물이 맞나요?",
+      "vietnamese": "Đúng là tòa nhà này phải không?",
+      "vietnamesePlain": "Dung la toa nha nay phai khong?",
       "isEmergency": false
     },
     {
