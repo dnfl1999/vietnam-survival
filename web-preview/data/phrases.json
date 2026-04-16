@@ -1,0 +1,1252 @@
+{
+  "app": {
+    "name": "Vietnam Survival",
+    "tagline": "상황별 문장을 빠르게 찾고 크게 보여주는 베트남 생존 표현집"
+  },
+  "categories": [
+    {
+      "id": "hospitalPharmacy",
+      "title": "병원/약국",
+      "systemImage": "cross.case.fill",
+      "shortDescription": "증상 설명과 진료 도움",
+      "accentColor": "blue"
+    },
+    {
+      "id": "taxiGrab",
+      "title": "택시/그랩",
+      "systemImage": "car.fill",
+      "shortDescription": "이동 중 자주 쓰는 말",
+      "accentColor": "green"
+    },
+    {
+      "id": "foodOrder",
+      "title": "음식 주문",
+      "systemImage": "fork.knife",
+      "shortDescription": "식당과 배달 주문 표현",
+      "accentColor": "orange"
+    },
+    {
+      "id": "priceNegotiation",
+      "title": "가격 흥정",
+      "systemImage": "tag.fill",
+      "shortDescription": "시장과 상점 흥정 표현",
+      "accentColor": "teal"
+    },
+    {
+      "id": "emergency",
+      "title": "위험 상황",
+      "systemImage": "exclamationmark.triangle.fill",
+      "shortDescription": "급한 상황에서 바로 사용",
+      "accentColor": "red"
+    },
+    {
+      "id": "commonPhrases",
+      "title": "자주 쓰는 말",
+      "systemImage": "bubble.left.and.bubble.right.fill",
+      "shortDescription": "기본 인사와 대화 표현",
+      "accentColor": "indigo"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hospital_1",
+      "category": "hospitalPharmacy",
+      "korean": "열이 있어요",
+      "vietnamese": "Tôi bị sốt.",
+      "vietnamesePlain": "Toi bi sot.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_2",
+      "category": "hospitalPharmacy",
+      "korean": "설사하고 있어요",
+      "vietnamese": "Tôi đang bị tiêu chảy.",
+      "vietnamesePlain": "Toi dang bi tieu chay.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_3",
+      "category": "hospitalPharmacy",
+      "korean": "배가 아파요",
+      "vietnamese": "Tôi bị đau bụng.",
+      "vietnamesePlain": "Toi bi dau bung.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_4",
+      "category": "hospitalPharmacy",
+      "korean": "두통이 있어요",
+      "vietnamese": "Tôi bị đau đầu.",
+      "vietnamesePlain": "Toi bi dau dau.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_5",
+      "category": "hospitalPharmacy",
+      "korean": "약 주세요",
+      "vietnamese": "Làm ơn cho tôi thuốc.",
+      "vietnamesePlain": "Lam on cho toi thuoc.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_6",
+      "category": "hospitalPharmacy",
+      "korean": "보험 되나요?",
+      "vietnamese": "Bảo hiểm có áp dụng không?",
+      "vietnamesePlain": "Bao hiem co ap dung khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_7",
+      "category": "hospitalPharmacy",
+      "korean": "빨리 진료받고 싶어요",
+      "vietnamese": "Tôi muốn được khám nhanh.",
+      "vietnamesePlain": "Toi muon duoc kham nhanh.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_8",
+      "category": "hospitalPharmacy",
+      "korean": "알레르기가 있어요",
+      "vietnamese": "Tôi bị dị ứng.",
+      "vietnamesePlain": "Toi bi di ung.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_9",
+      "category": "hospitalPharmacy",
+      "korean": "이 약을 먹어도 되나요?",
+      "vietnamese": "Tôi có thể uống thuốc này không?",
+      "vietnamesePlain": "Toi co the uong thuoc nay khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_10",
+      "category": "hospitalPharmacy",
+      "korean": "처방전이 필요해요",
+      "vietnamese": "Tôi cần đơn thuốc.",
+      "vietnamesePlain": "Toi can don thuoc.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_11",
+      "category": "hospitalPharmacy",
+      "korean": "어지러워요",
+      "vietnamese": "Tôi bị chóng mặt.",
+      "vietnamesePlain": "Toi bi chong mat.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_12",
+      "category": "hospitalPharmacy",
+      "korean": "토할 것 같아요",
+      "vietnamese": "Tôi cảm thấy buồn nôn.",
+      "vietnamesePlain": "Toi cam thay buon non.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_13",
+      "category": "hospitalPharmacy",
+      "korean": "목이 아파요",
+      "vietnamese": "Tôi bị đau họng.",
+      "vietnamesePlain": "Toi bi dau hong.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_14",
+      "category": "hospitalPharmacy",
+      "korean": "기침이 나요",
+      "vietnamese": "Tôi bị ho.",
+      "vietnamesePlain": "Toi bi ho.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_15",
+      "category": "hospitalPharmacy",
+      "korean": "상처를 소독해 주세요",
+      "vietnamese": "Làm ơn sát trùng vết thương giúp tôi.",
+      "vietnamesePlain": "Lam on sat trung vet thuong giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_16",
+      "category": "hospitalPharmacy",
+      "korean": "반창고가 필요해요",
+      "vietnamese": "Tôi cần băng cá nhân.",
+      "vietnamesePlain": "Toi can bang ca nhan.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_17",
+      "category": "hospitalPharmacy",
+      "korean": "진통제가 있나요?",
+      "vietnamese": "Có thuốc giảm đau không?",
+      "vietnamesePlain": "Co thuoc giam dau khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_18",
+      "category": "hospitalPharmacy",
+      "korean": "하루에 몇 번 먹나요?",
+      "vietnamese": "Mỗi ngày uống mấy lần?",
+      "vietnamesePlain": "Moi ngay uong may lan?",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_19",
+      "category": "hospitalPharmacy",
+      "korean": "식후에 먹나요?",
+      "vietnamese": "Uống sau khi ăn phải không?",
+      "vietnamesePlain": "Uong sau khi an phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_20",
+      "category": "hospitalPharmacy",
+      "korean": "영수증을 주세요",
+      "vietnamese": "Làm ơn cho tôi hóa đơn.",
+      "vietnamesePlain": "Lam on cho toi hoa don.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_21",
+      "category": "hospitalPharmacy",
+      "korean": "열이 많이 나요",
+      "vietnamese": "Tôi sốt cao.",
+      "vietnamesePlain": "Toi sot cao.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_22",
+      "category": "hospitalPharmacy",
+      "korean": "배탈이 난 것 같아요",
+      "vietnamese": "Tôi nghĩ tôi bị rối loạn tiêu hóa.",
+      "vietnamesePlain": "Toi nghi toi bi roi loan tieu hoa.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_23",
+      "category": "hospitalPharmacy",
+      "korean": "처방전 설명 부탁드려요",
+      "vietnamese": "Làm ơn giải thích đơn thuốc giúp tôi.",
+      "vietnamesePlain": "Lam on giai thich don thuoc giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_24",
+      "category": "hospitalPharmacy",
+      "korean": "언제 다시 와야 하나요?",
+      "vietnamese": "Khi nào tôi cần quay lại?",
+      "vietnamesePlain": "Khi nao toi can quay lai?",
+      "isEmergency": false
+    },
+    {
+      "id": "hospital_25",
+      "category": "hospitalPharmacy",
+      "korean": "주사 말고 먹는 약으로 주세요",
+      "vietnamese": "Làm ơn cho tôi thuốc uống, không tiêm.",
+      "vietnamesePlain": "Lam on cho toi thuoc uong, khong tiem.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_1",
+      "category": "taxiGrab",
+      "korean": "여기로 가주세요",
+      "vietnamese": "Làm ơn đưa tôi đến đây.",
+      "vietnamesePlain": "Lam on dua toi den day.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_2",
+      "category": "taxiGrab",
+      "korean": "여기서 세워주세요",
+      "vietnamese": "Làm ơn dừng ở đây.",
+      "vietnamesePlain": "Lam on dung o day.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_3",
+      "category": "taxiGrab",
+      "korean": "빨리 가주세요",
+      "vietnamese": "Làm ơn đi nhanh giúp tôi.",
+      "vietnamesePlain": "Lam on di nhanh giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_4",
+      "category": "taxiGrab",
+      "korean": "천천히 가주세요",
+      "vietnamese": "Làm ơn đi chậm thôi.",
+      "vietnamesePlain": "Lam on di cham thoi.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_5",
+      "category": "taxiGrab",
+      "korean": "다른 길로 가주세요",
+      "vietnamese": "Làm ơn đi đường khác.",
+      "vietnamesePlain": "Lam on di duong khac.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_6",
+      "category": "taxiGrab",
+      "korean": "여기 맞나요?",
+      "vietnamese": "Đây có đúng không?",
+      "vietnamesePlain": "Day co dung khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_7",
+      "category": "taxiGrab",
+      "korean": "요금이 얼마예요?",
+      "vietnamese": "Giá bao nhiêu?",
+      "vietnamesePlain": "Gia bao nhieu?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_8",
+      "category": "taxiGrab",
+      "korean": "그랩 기사님 맞나요?",
+      "vietnamese": "Anh là tài xế Grab phải không?",
+      "vietnamesePlain": "Anh la tai xe Grab phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_9",
+      "category": "taxiGrab",
+      "korean": "번호판이 맞나요?",
+      "vietnamese": "Biển số xe có đúng không?",
+      "vietnamesePlain": "Bien so xe co dung khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_10",
+      "category": "taxiGrab",
+      "korean": "호텔로 가주세요",
+      "vietnamese": "Làm ơn đưa tôi về khách sạn.",
+      "vietnamesePlain": "Lam on dua toi ve khach san.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_11",
+      "category": "taxiGrab",
+      "korean": "공항으로 가주세요",
+      "vietnamese": "Làm ơn đưa tôi ra sân bay.",
+      "vietnamesePlain": "Lam on dua toi ra san bay.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_12",
+      "category": "taxiGrab",
+      "korean": "이 주소로 가주세요",
+      "vietnamese": "Làm ơn đi đến địa chỉ này.",
+      "vietnamesePlain": "Lam on di den dia chi nay.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_13",
+      "category": "taxiGrab",
+      "korean": "지도대로 가주세요",
+      "vietnamese": "Làm ơn đi theo bản đồ.",
+      "vietnamesePlain": "Lam on di theo ban do.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_14",
+      "category": "taxiGrab",
+      "korean": "길이 많이 막히나요?",
+      "vietnamese": "Đường có kẹt xe nhiều không?",
+      "vietnamesePlain": "Duong co ket xe nhieu khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_15",
+      "category": "taxiGrab",
+      "korean": "에어컨을 켜주세요",
+      "vietnamese": "Làm ơn bật máy lạnh.",
+      "vietnamesePlain": "Lam on bat may lanh.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_16",
+      "category": "taxiGrab",
+      "korean": "창문을 열어도 되나요?",
+      "vietnamese": "Tôi mở cửa sổ được không?",
+      "vietnamesePlain": "Toi mo cua so duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_17",
+      "category": "taxiGrab",
+      "korean": "현금으로 결제할게요",
+      "vietnamese": "Tôi sẽ trả bằng tiền mặt.",
+      "vietnamesePlain": "Toi se tra bang tien mat.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_18",
+      "category": "taxiGrab",
+      "korean": "앱으로 결제했어요",
+      "vietnamese": "Tôi đã thanh toán qua ứng dụng.",
+      "vietnamesePlain": "Toi da thanh toan qua ung dung.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_19",
+      "category": "taxiGrab",
+      "korean": "잠깐 기다려 주세요",
+      "vietnamese": "Làm ơn chờ tôi một chút.",
+      "vietnamesePlain": "Lam on cho toi mot chut.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_20",
+      "category": "taxiGrab",
+      "korean": "트렁크를 열어주세요",
+      "vietnamese": "Làm ơn mở cốp xe.",
+      "vietnamesePlain": "Lam on mo cop xe.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_21",
+      "category": "taxiGrab",
+      "korean": "기사님, 여기서 잠깐 세워 주세요",
+      "vietnamese": "Làm ơn dừng lại ở đây một chút.",
+      "vietnamesePlain": "Lam on dung lai o day mot chut.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_22",
+      "category": "taxiGrab",
+      "korean": "이 주소가 맞는지 확인해 주세요",
+      "vietnamese": "Làm ơn kiểm tra địa chỉ này giúp tôi.",
+      "vietnamesePlain": "Lam on kiem tra dia chi nay giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_23",
+      "category": "taxiGrab",
+      "korean": "고속도로 말고 일반도로로 가 주세요",
+      "vietnamese": "Làm ơn đi đường thường, đừng đi cao tốc.",
+      "vietnamesePlain": "Lam on di duong thuong, dung di cao toc.",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_24",
+      "category": "taxiGrab",
+      "korean": "영수증 받을 수 있나요?",
+      "vietnamese": "Tôi có thể nhận hóa đơn không?",
+      "vietnamesePlain": "Toi co the nhan hoa don khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "taxi_25",
+      "category": "taxiGrab",
+      "korean": "도착하면 알려 주세요",
+      "vietnamese": "Khi đến nơi, làm ơn báo tôi.",
+      "vietnamesePlain": "Khi den noi, lam on bao toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_1",
+      "category": "foodOrder",
+      "korean": "고수 빼주세요",
+      "vietnamese": "Làm ơn đừng cho rau mùi.",
+      "vietnamesePlain": "Lam on dung cho rau mui.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_2",
+      "category": "foodOrder",
+      "korean": "맵지 않게 해주세요",
+      "vietnamese": "Làm ơn đừng làm cay.",
+      "vietnamesePlain": "Lam on dung lam cay.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_3",
+      "category": "foodOrder",
+      "korean": "돼지고기 말고요",
+      "vietnamese": "Tôi không ăn thịt heo.",
+      "vietnamesePlain": "Toi khong an thit heo.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_4",
+      "category": "foodOrder",
+      "korean": "포장해 주세요",
+      "vietnamese": "Làm ơn đóng gói mang đi.",
+      "vietnamesePlain": "Lam on dong goi mang di.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_5",
+      "category": "foodOrder",
+      "korean": "물 주세요",
+      "vietnamese": "Làm ơn cho tôi nước.",
+      "vietnamesePlain": "Lam on cho toi nuoc.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_6",
+      "category": "foodOrder",
+      "korean": "얼음 빼주세요",
+      "vietnamese": "Làm ơn đừng cho đá.",
+      "vietnamesePlain": "Lam on dung cho da.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_7",
+      "category": "foodOrder",
+      "korean": "계산해 주세요",
+      "vietnamese": "Làm ơn tính tiền.",
+      "vietnamesePlain": "Lam on tinh tien.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_8",
+      "category": "foodOrder",
+      "korean": "메뉴판 주세요",
+      "vietnamese": "Làm ơn cho tôi xem thực đơn.",
+      "vietnamesePlain": "Lam on cho toi xem thuc don.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_9",
+      "category": "foodOrder",
+      "korean": "추천 메뉴가 뭐예요?",
+      "vietnamese": "Món nào được đề xuất?",
+      "vietnamesePlain": "Mon nao duoc de xuat?",
+      "isEmergency": false
+    },
+    {
+      "id": "food_10",
+      "category": "foodOrder",
+      "korean": "이거 하나 주세요",
+      "vietnamese": "Cho tôi một phần món này.",
+      "vietnamesePlain": "Cho toi mot phan mon nay.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_11",
+      "category": "foodOrder",
+      "korean": "두 개 주세요",
+      "vietnamese": "Cho tôi hai phần.",
+      "vietnamesePlain": "Cho toi hai phan.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_12",
+      "category": "foodOrder",
+      "korean": "덜 달게 해주세요",
+      "vietnamese": "Làm ơn làm ít ngọt.",
+      "vietnamesePlain": "Lam on lam it ngot.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_13",
+      "category": "foodOrder",
+      "korean": "소스를 따로 주세요",
+      "vietnamese": "Làm ơn để nước sốt riêng.",
+      "vietnamesePlain": "Lam on de nuoc sot rieng.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_14",
+      "category": "foodOrder",
+      "korean": "채식 메뉴가 있나요?",
+      "vietnamese": "Có món chay không?",
+      "vietnamesePlain": "Co mon chay khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "food_15",
+      "category": "foodOrder",
+      "korean": "해산물 알레르기가 있어요",
+      "vietnamese": "Tôi bị dị ứng hải sản.",
+      "vietnamesePlain": "Toi bi di ung hai san.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_16",
+      "category": "foodOrder",
+      "korean": "땅콩 빼주세요",
+      "vietnamese": "Làm ơn đừng cho đậu phộng.",
+      "vietnamesePlain": "Lam on dung cho dau phong.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_17",
+      "category": "foodOrder",
+      "korean": "젓가락 주세요",
+      "vietnamese": "Làm ơn cho tôi đũa.",
+      "vietnamesePlain": "Lam on cho toi dua.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_18",
+      "category": "foodOrder",
+      "korean": "숟가락 주세요",
+      "vietnamese": "Làm ơn cho tôi muỗng.",
+      "vietnamesePlain": "Lam on cho toi muong.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_19",
+      "category": "foodOrder",
+      "korean": "화장실이 어디예요?",
+      "vietnamese": "Nhà vệ sinh ở đâu?",
+      "vietnamesePlain": "Nha ve sinh o dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "food_20",
+      "category": "foodOrder",
+      "korean": "영수증 주세요",
+      "vietnamese": "Làm ơn cho tôi hóa đơn.",
+      "vietnamesePlain": "Lam on cho toi hoa don.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_21",
+      "category": "foodOrder",
+      "korean": "고수는 빼고 양파는 넣어 주세요",
+      "vietnamese": "Làm ơn đừng cho rau mùi, nhưng thêm hành.",
+      "vietnamesePlain": "Lam on dung cho rau mui, nhung them hanh.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_22",
+      "category": "foodOrder",
+      "korean": "국물은 따로 주세요",
+      "vietnamese": "Làm ơn để nước dùng riêng.",
+      "vietnamesePlain": "Lam on de nuoc dung rieng.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_23",
+      "category": "foodOrder",
+      "korean": "덜 짜게 해 주세요",
+      "vietnamese": "Làm ơn làm ít mặn.",
+      "vietnamesePlain": "Lam on lam it man.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_24",
+      "category": "foodOrder",
+      "korean": "이거 포장해서 호텔로 가져갈게요",
+      "vietnamese": "Tôi sẽ mang món này về khách sạn.",
+      "vietnamesePlain": "Toi se mang mon nay ve khach san.",
+      "isEmergency": false
+    },
+    {
+      "id": "food_25",
+      "category": "foodOrder",
+      "korean": "아이가 먹을 거라 안 맵게 해 주세요",
+      "vietnamese": "Trẻ em ăn nên làm không cay giúp tôi.",
+      "vietnamesePlain": "Tre em an nen lam khong cay giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_1",
+      "category": "priceNegotiation",
+      "korean": "너무 비싸요",
+      "vietnamese": "Đắt quá.",
+      "vietnamesePlain": "Dat qua.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_2",
+      "category": "priceNegotiation",
+      "korean": "좀 깎아주세요",
+      "vietnamese": "Làm ơn giảm giá một chút.",
+      "vietnamesePlain": "Lam on giam gia mot chut.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_3",
+      "category": "priceNegotiation",
+      "korean": "다른 데는 더 싸요",
+      "vietnamese": "Nơi khác rẻ hơn.",
+      "vietnamesePlain": "Noi khac re hon.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_4",
+      "category": "priceNegotiation",
+      "korean": "현금으로 할게요",
+      "vietnamese": "Tôi sẽ trả bằng tiền mặt.",
+      "vietnamesePlain": "Toi se tra bang tien mat.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_5",
+      "category": "priceNegotiation",
+      "korean": "마지막 가격 얼마예요?",
+      "vietnamese": "Giá cuối cùng là bao nhiêu?",
+      "vietnamesePlain": "Gia cuoi cung la bao nhieu?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_6",
+      "category": "priceNegotiation",
+      "korean": "그냥 볼게요",
+      "vietnamese": "Tôi chỉ xem thôi.",
+      "vietnamesePlain": "Toi chi xem thoi.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_7",
+      "category": "priceNegotiation",
+      "korean": "생각해볼게요",
+      "vietnamese": "Tôi sẽ suy nghĩ thêm.",
+      "vietnamesePlain": "Toi se suy nghi them.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_8",
+      "category": "priceNegotiation",
+      "korean": "얼마예요?",
+      "vietnamese": "Bao nhiêu tiền?",
+      "vietnamesePlain": "Bao nhieu tien?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_9",
+      "category": "priceNegotiation",
+      "korean": "이 가격 맞나요?",
+      "vietnamese": "Giá này đúng không?",
+      "vietnamesePlain": "Gia nay dung khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_10",
+      "category": "priceNegotiation",
+      "korean": "너무 비싸서 못 사요",
+      "vietnamese": "Đắt quá nên tôi không mua được.",
+      "vietnamesePlain": "Dat qua nen toi khong mua duoc.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_11",
+      "category": "priceNegotiation",
+      "korean": "조금만 더 싸게 해주세요",
+      "vietnamese": "Làm ơn giảm thêm một chút.",
+      "vietnamesePlain": "Lam on giam them mot chut.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_12",
+      "category": "priceNegotiation",
+      "korean": "두 개 사면 얼마예요?",
+      "vietnamese": "Mua hai cái thì bao nhiêu?",
+      "vietnamesePlain": "Mua hai cai thi bao nhieu?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_13",
+      "category": "priceNegotiation",
+      "korean": "카드 결제 되나요?",
+      "vietnamese": "Có thanh toán bằng thẻ được không?",
+      "vietnamesePlain": "Co thanh toan bang the duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_14",
+      "category": "priceNegotiation",
+      "korean": "계좌이체 되나요?",
+      "vietnamese": "Có chuyển khoản được không?",
+      "vietnamesePlain": "Co chuyen khoan duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_15",
+      "category": "priceNegotiation",
+      "korean": "잔돈 주세요",
+      "vietnamese": "Làm ơn trả tiền thừa cho tôi.",
+      "vietnamesePlain": "Lam on tra tien thua cho toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_16",
+      "category": "priceNegotiation",
+      "korean": "영수증 주세요",
+      "vietnamese": "Làm ơn cho tôi hóa đơn.",
+      "vietnamesePlain": "Lam on cho toi hoa don.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_17",
+      "category": "priceNegotiation",
+      "korean": "다른 색이 있나요?",
+      "vietnamese": "Có màu khác không?",
+      "vietnamesePlain": "Co mau khac khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_18",
+      "category": "priceNegotiation",
+      "korean": "다른 사이즈가 있나요?",
+      "vietnamese": "Có kích cỡ khác không?",
+      "vietnamesePlain": "Co kich co khac khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_19",
+      "category": "priceNegotiation",
+      "korean": "환불할 수 있나요?",
+      "vietnamese": "Tôi có thể hoàn tiền không?",
+      "vietnamesePlain": "Toi co the hoan tien khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_20",
+      "category": "priceNegotiation",
+      "korean": "교환할 수 있나요?",
+      "vietnamese": "Tôi có thể đổi hàng không?",
+      "vietnamesePlain": "Toi co the doi hang khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_21",
+      "category": "priceNegotiation",
+      "korean": "현금 할인 되나요?",
+      "vietnamese": "Trả tiền mặt có giảm giá không?",
+      "vietnamesePlain": "Tra tien mat co giam gia khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_22",
+      "category": "priceNegotiation",
+      "korean": "세 개 사면 얼마예요?",
+      "vietnamese": "Mua ba cái thì bao nhiêu?",
+      "vietnamesePlain": "Mua ba cai thi bao nhieu?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_23",
+      "category": "priceNegotiation",
+      "korean": "정찰가인가요?",
+      "vietnamese": "Đây là giá niêm yết phải không?",
+      "vietnamesePlain": "Day la gia niem yet phai khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "price_24",
+      "category": "priceNegotiation",
+      "korean": "조금 더 둘러보고 올게요",
+      "vietnamese": "Tôi sẽ đi xem thêm một chút rồi quay lại.",
+      "vietnamesePlain": "Toi se di xem them mot chut roi quay lai.",
+      "isEmergency": false
+    },
+    {
+      "id": "price_25",
+      "category": "priceNegotiation",
+      "korean": "비슷한 제품도 보여 주세요",
+      "vietnamese": "Làm ơn cho tôi xem sản phẩm tương tự.",
+      "vietnamesePlain": "Lam on cho toi xem san pham tuong tu.",
+      "isEmergency": false
+    },
+    {
+      "id": "emergency_1",
+      "category": "emergency",
+      "korean": "도와주세요",
+      "vietnamese": "Làm ơn cứu tôi.",
+      "vietnamesePlain": "Lam on cuu toi.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_2",
+      "category": "emergency",
+      "korean": "경찰 불러주세요",
+      "vietnamese": "Làm ơn gọi cảnh sát.",
+      "vietnamesePlain": "Lam on goi canh sat.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_3",
+      "category": "emergency",
+      "korean": "병원 가야 해요",
+      "vietnamese": "Tôi cần đến bệnh viện ngay.",
+      "vietnamesePlain": "Toi can den benh vien ngay.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_4",
+      "category": "emergency",
+      "korean": "사고가 났어요",
+      "vietnamese": "Đã có tai nạn.",
+      "vietnamesePlain": "Da co tai nan.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_5",
+      "category": "emergency",
+      "korean": "지갑을 잃어버렸어요",
+      "vietnamese": "Tôi bị mất ví.",
+      "vietnamesePlain": "Toi bi mat vi.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_6",
+      "category": "emergency",
+      "korean": "휴대폰을 잃어버렸어요",
+      "vietnamese": "Tôi bị mất điện thoại.",
+      "vietnamesePlain": "Toi bi mat dien thoai.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_7",
+      "category": "emergency",
+      "korean": "지금 녹음하고 있어요",
+      "vietnamese": "Tôi đang ghi âm bây giờ.",
+      "vietnamesePlain": "Toi dang ghi am bay gio.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_8",
+      "category": "emergency",
+      "korean": "긴급 상황이에요",
+      "vietnamese": "Đây là trường hợp khẩn cấp.",
+      "vietnamesePlain": "Day la truong hop khan cap.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_9",
+      "category": "emergency",
+      "korean": "구급차를 불러주세요",
+      "vietnamese": "Làm ơn gọi xe cấp cứu.",
+      "vietnamesePlain": "Lam on goi xe cap cuu.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_10",
+      "category": "emergency",
+      "korean": "한국 대사관에 연락해 주세요",
+      "vietnamese": "Làm ơn liên hệ Đại sứ quán Hàn Quốc.",
+      "vietnamesePlain": "Lam on lien he Dai su quan Han Quoc.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_11",
+      "category": "emergency",
+      "korean": "저를 따라오지 마세요",
+      "vietnamese": "Đừng đi theo tôi.",
+      "vietnamesePlain": "Dung di theo toi.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_12",
+      "category": "emergency",
+      "korean": "만지지 마세요",
+      "vietnamese": "Đừng chạm vào tôi.",
+      "vietnamesePlain": "Dung cham vao toi.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_13",
+      "category": "emergency",
+      "korean": "저는 한국 사람입니다",
+      "vietnamese": "Tôi là người Hàn Quốc.",
+      "vietnamesePlain": "Toi la nguoi Han Quoc.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_14",
+      "category": "emergency",
+      "korean": "여권을 잃어버렸어요",
+      "vietnamese": "Tôi bị mất hộ chiếu.",
+      "vietnamesePlain": "Toi bi mat ho chieu.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_15",
+      "category": "emergency",
+      "korean": "카드를 잃어버렸어요",
+      "vietnamese": "Tôi bị mất thẻ.",
+      "vietnamesePlain": "Toi bi mat the.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_16",
+      "category": "emergency",
+      "korean": "돈을 도난당했어요",
+      "vietnamese": "Tôi bị mất trộm tiền.",
+      "vietnamesePlain": "Toi bi mat trom tien.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_17",
+      "category": "emergency",
+      "korean": "제 가방을 도난당했어요",
+      "vietnamese": "Tôi bị mất trộm túi.",
+      "vietnamesePlain": "Toi bi mat trom tui.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_18",
+      "category": "emergency",
+      "korean": "여기서 나가고 싶어요",
+      "vietnamese": "Tôi muốn ra khỏi đây.",
+      "vietnamesePlain": "Toi muon ra khoi day.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_19",
+      "category": "emergency",
+      "korean": "안전한 곳으로 데려가 주세요",
+      "vietnamese": "Làm ơn đưa tôi đến nơi an toàn.",
+      "vietnamesePlain": "Lam on dua toi den noi an toan.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_20",
+      "category": "emergency",
+      "korean": "이 번호로 전화해 주세요",
+      "vietnamese": "Làm ơn gọi số này giúp tôi.",
+      "vietnamesePlain": "Lam on goi so nay giup toi.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_21",
+      "category": "emergency",
+      "korean": "여권 사본이 휴대폰에 있어요",
+      "vietnamese": "Tôi có bản sao hộ chiếu trong điện thoại.",
+      "vietnamesePlain": "Toi co ban sao ho chieu trong dien thoai.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_22",
+      "category": "emergency",
+      "korean": "한국어 통역이 필요해요",
+      "vietnamese": "Tôi cần thông dịch tiếng Hàn.",
+      "vietnamesePlain": "Toi can thong dich tieng Han.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_23",
+      "category": "emergency",
+      "korean": "지금 너무 아파서 걷기 힘들어요",
+      "vietnamese": "Bây giờ tôi đau quá, khó đi bộ.",
+      "vietnamesePlain": "Bay gio toi dau qua, kho di bo.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_24",
+      "category": "emergency",
+      "korean": "제 가족에게 연락해 주세요",
+      "vietnamese": "Làm ơn liên lạc với gia đình tôi.",
+      "vietnamesePlain": "Lam on lien lac voi gia dinh toi.",
+      "isEmergency": true
+    },
+    {
+      "id": "emergency_25",
+      "category": "emergency",
+      "korean": "안전한 곳에서 경찰을 기다릴게요",
+      "vietnamese": "Tôi sẽ đợi cảnh sát ở nơi an toàn.",
+      "vietnamesePlain": "Toi se doi canh sat o noi an toan.",
+      "isEmergency": true
+    },
+    {
+      "id": "common_1",
+      "category": "commonPhrases",
+      "korean": "안녕하세요",
+      "vietnamese": "Xin chào.",
+      "vietnamesePlain": "Xin chao.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_2",
+      "category": "commonPhrases",
+      "korean": "감사합니다",
+      "vietnamese": "Cảm ơn.",
+      "vietnamesePlain": "Cam on.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_3",
+      "category": "commonPhrases",
+      "korean": "괜찮아요",
+      "vietnamese": "Không sao đâu.",
+      "vietnamesePlain": "Khong sao dau.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_4",
+      "category": "commonPhrases",
+      "korean": "이해했어요",
+      "vietnamese": "Tôi hiểu rồi.",
+      "vietnamesePlain": "Toi hieu roi.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_5",
+      "category": "commonPhrases",
+      "korean": "이해 못 했어요",
+      "vietnamese": "Tôi chưa hiểu.",
+      "vietnamesePlain": "Toi chua hieu.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_6",
+      "category": "commonPhrases",
+      "korean": "다시 말해 주세요",
+      "vietnamese": "Làm ơn nói lại.",
+      "vietnamesePlain": "Lam on noi lai.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_7",
+      "category": "commonPhrases",
+      "korean": "천천히 말해 주세요",
+      "vietnamese": "Làm ơn nói chậm thôi.",
+      "vietnamesePlain": "Lam on noi cham thoi.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_8",
+      "category": "commonPhrases",
+      "korean": "죄송합니다",
+      "vietnamese": "Xin lỗi.",
+      "vietnamesePlain": "Xin loi.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_9",
+      "category": "commonPhrases",
+      "korean": "괜찮습니다",
+      "vietnamese": "Không sao.",
+      "vietnamesePlain": "Khong sao.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_10",
+      "category": "commonPhrases",
+      "korean": "네",
+      "vietnamese": "Vâng.",
+      "vietnamesePlain": "Vang.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_11",
+      "category": "commonPhrases",
+      "korean": "아니요",
+      "vietnamese": "Không.",
+      "vietnamesePlain": "Khong.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_12",
+      "category": "commonPhrases",
+      "korean": "잠깐만요",
+      "vietnamese": "Chờ một chút.",
+      "vietnamesePlain": "Cho mot chut.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_13",
+      "category": "commonPhrases",
+      "korean": "저는 베트남어를 잘 못해요",
+      "vietnamese": "Tôi không nói tiếng Việt giỏi.",
+      "vietnamesePlain": "Toi khong noi tieng Viet gioi.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_14",
+      "category": "commonPhrases",
+      "korean": "한국어 할 수 있나요?",
+      "vietnamese": "Bạn có nói tiếng Hàn được không?",
+      "vietnamesePlain": "Ban co noi tieng Han duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "common_15",
+      "category": "commonPhrases",
+      "korean": "영어 할 수 있나요?",
+      "vietnamese": "Bạn có nói tiếng Anh được không?",
+      "vietnamesePlain": "Ban co noi tieng Anh duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "common_16",
+      "category": "commonPhrases",
+      "korean": "이걸 보여드릴게요",
+      "vietnamese": "Tôi sẽ cho bạn xem cái này.",
+      "vietnamesePlain": "Toi se cho ban xem cai nay.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_17",
+      "category": "commonPhrases",
+      "korean": "여기가 어디예요?",
+      "vietnamese": "Đây là đâu?",
+      "vietnamesePlain": "Day la dau?",
+      "isEmergency": false
+    },
+    {
+      "id": "common_18",
+      "category": "commonPhrases",
+      "korean": "도와주실 수 있나요?",
+      "vietnamese": "Bạn có thể giúp tôi không?",
+      "vietnamesePlain": "Ban co the giup toi khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "common_19",
+      "category": "commonPhrases",
+      "korean": "사진을 찍어도 되나요?",
+      "vietnamese": "Tôi chụp ảnh được không?",
+      "vietnamesePlain": "Toi chup anh duoc khong?",
+      "isEmergency": false
+    },
+    {
+      "id": "common_20",
+      "category": "commonPhrases",
+      "korean": "와이파이 비밀번호가 뭐예요?",
+      "vietnamese": "Mật khẩu Wi-Fi là gì?",
+      "vietnamesePlain": "Mat khau Wi-Fi la gi?",
+      "isEmergency": false
+    },
+    {
+      "id": "common_21",
+      "category": "commonPhrases",
+      "korean": "번역기로 보여드릴게요",
+      "vietnamese": "Tôi sẽ cho bạn xem bằng máy dịch.",
+      "vietnamesePlain": "Toi se cho ban xem bang may dich.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_22",
+      "category": "commonPhrases",
+      "korean": "적어 주시면 더 잘 이해할 수 있어요",
+      "vietnamese": "Nếu bạn viết ra, tôi sẽ hiểu hơn.",
+      "vietnamesePlain": "Neu ban viet ra, toi se hieu hon.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_23",
+      "category": "commonPhrases",
+      "korean": "잠시만 기다려 주세요",
+      "vietnamese": "Làm ơn đợi một chút.",
+      "vietnamesePlain": "Lam on doi mot chut.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_24",
+      "category": "commonPhrases",
+      "korean": "도와주셔서 정말 감사합니다",
+      "vietnamese": "Cảm ơn bạn rất nhiều vì đã giúp tôi.",
+      "vietnamesePlain": "Cam on ban rat nhieu vi da giup toi.",
+      "isEmergency": false
+    },
+    {
+      "id": "common_25",
+      "category": "commonPhrases",
+      "korean": "한국에서 왔어요",
+      "vietnamese": "Tôi đến từ Hàn Quốc.",
+      "vietnamesePlain": "Toi den tu Han Quoc.",
+      "isEmergency": false
+    }
+  ]
+}

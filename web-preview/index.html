@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietnam Survival Web Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <p class="eyebrow">Web Preview</p>
+          <h1>Vietnam Survival</h1>
+          <p class="brand-copy">
+            아이폰 앱을 만들기 전에 브라우저에서 먼저 흐름과 문장 구성을 확인하는 미리보기입니다.
+          </p>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-button is-active" data-tab="home">홈</button>
+          <button class="nav-button" data-tab="search">검색</button>
+          <button class="nav-button" data-tab="favorites">즐겨찾기</button>
+          <button class="nav-button" data-tab="premium">프리미엄</button>
+        </nav>
+
+        <section class="panel">
+          <h2>빠른 체크</h2>
+          <ul class="meta-list">
+            <li>카테고리 구성</li>
+            <li>문장 검색 흐름</li>
+            <li>즐겨찾기 저장</li>
+            <li>상세 보기와 크게 보기</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="page is-active" data-page="home">
+          <section class="hero">
+            <div>
+              <p class="eyebrow">Vietnam Survival</p>
+              <h2>급할 때 바로 꺼내 보여주는 베트남 생존 문장</h2>
+              <p class="hero-copy">
+                한국어로 먼저 찾고, 베트남어 문장을 크게 보여주거나 웹 음성으로 재생해볼 수 있습니다.
+              </p>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <span class="stat-label">카테고리</span>
+                <strong id="categoryCount">0</strong>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">문장 수</span>
+                <strong id="phraseCount">0</strong>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">긴급 문장</span>
+                <strong id="emergencyCount">0</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Categories</p>
+                <h3>상황 카테고리</h3>
+              </div>
+              <button class="ghost-button" id="showAllPhrasesButton">전체 문장 보기</button>
+            </div>
+            <div id="categoryGrid" class="category-grid"></div>
+          </section>
+
+          <section class="section">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Quick Entry</p>
+                <h3>빠른 진입</h3>
+              </div>
+            </div>
+            <div class="quick-grid">
+              <button class="quick-card" data-jump-tab="favorites">
+                <span>즐겨찾기</span>
+                <strong>저장한 문장 바로 열기</strong>
+              </button>
+              <button class="quick-card" data-jump-tab="search">
+                <span>전체 검색</span>
+                <strong>한국어/베트남어 검색</strong>
+              </button>
+              <button class="quick-card" data-jump-tab="premium">
+                <span>프리미엄</span>
+                <strong>향후 확장 자리 확인</strong>
+              </button>
+            </div>
+          </section>
+        </section>
+
+        <section class="page" data-page="search">
+          <section class="search-toolbar">
+            <input id="searchInput" type="search" placeholder="한국어 또는 베트남어 검색" />
+            <select id="categoryFilter">
+              <option value="all">전체 카테고리</option>
+            </select>
+          </section>
+          <div id="searchSummary" class="summary-text"></div>
+          <div id="searchResults" class="phrase-list"></div>
+        </section>
+
+        <section class="page" data-page="favorites">
+          <section class="section-heading">
+            <div>
+              <p class="eyebrow">Favorites</p>
+              <h3>즐겨찾기</h3>
+            </div>
+          </section>
+          <div id="favoritesSummary" class="summary-text"></div>
+          <div id="favoritesList" class="phrase-list"></div>
+        </section>
+
+        <section class="page" data-page="premium">
+          <section class="premium-card">
+            <p class="eyebrow">Placeholder</p>
+            <h3>프리미엄 기능 자리</h3>
+            <p>
+              AI 상황 추천, 오프라인 팩 확장, 광고/구독 구조 같은 후속 기능을 이 자리에서 검토할 수 있게
+              구성했습니다.
+            </p>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="phraseDialog" class="dialog">
+      <article class="dialog-card">
+        <button class="dialog-close" id="closeDialogButton" aria-label="닫기">×</button>
+        <div id="dialogContent"></div>
+      </article>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+  </html>
