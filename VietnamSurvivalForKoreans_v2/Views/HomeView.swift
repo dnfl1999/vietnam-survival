@@ -1,33 +1,48 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var store: PhraseStore
+
+    @State private var showUpdateSheet = false
+    @State private var showRefreshAlert = false
+
+    private let featuredCategories: [PhraseCategory] = [
+        .policeLostItem,
+        .simInternet,
+        .restroomLaundry,
+    ]
+
     var body: some View {
         NavigationStack {
-            ZStack {
-                Color(.systemGroupedBackground).ignoresSafeArea()
-
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 22) {
-                        headerSection
-                        categorySection
-                        quickEntrySection
-                        quickInfoSection
-                        futureSection
-                    }
-                    .padding()
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    // 상단에서 앱의 목적을 먼저 설명해
+                    // 처음 보는 사용자도 바로 이해할 수 있게 합니다.
+                    headerSection
+                    updateControlSection
+                    featuredCategorySection
+                    categoryGrid
+                    quickInfoSection
+                    futureSection
                 }
+                .padding()
             }
             .navigationTitle("Vietnam Survival")
             .navigationBarTitleDisplayMode(.large)
+            .alert("새 콘텐츠를 다시 불러왔어요", isPresented: $showRefreshAlert) {
+                Button("확인", role: .cancel) { }
+            } message: {
+                Text("현재 \(store.categoryCount)개 카테고리와 \(store.phraseCount)개 문장을 앱에 반영했습니다.")
+            }
+            .sheet(isPresented: $showUpdateSheet) {
+                UpdateSummaryView()
+                    .environmentObject(store)
+            }
         }
     }
 
     private var headerSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("당황할 때 바로 누르는 베트남 생존 문장")
-                .font(.headline)
-                .foregroundStyle(.secondary)
-
             Text("당황하기 전에\n바로 눌러서 보여주세요")
                 .font(.system(size: 30, weight: .bold))
 
@@ -44,29 +59,79 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .background {
-            LinearGradient(
-                colors: [Color.blue.opacity(0.18), Color.teal.opacity(0.08)],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
-        }
-        .overlay(
-            RoundedRectangle(cornerRadius: 28, style: .continuous)
-                .stroke(Color.white.opacity(0.25), lineWidth: 1)
+        .background(
+            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                .fill(.thinMaterial)
         )
     }
 
-    private var categorySection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            SectionHeader(
-                title: "상황 카테고리",
-                subtitle: "필요한 상황을 누르면 바로 쓸 수 있는 문장이 열립니다."
-            )
+    private var updateControlSection: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("콘텐츠 업데이트")
+                        .font(.title3.bold())
+
+                    Text("현재 \(store.categoryCount)개 카테고리, \(store.phraseCount)개 문장")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+
+                Spacer()
+
+                Text("최신")
+                    .font(.caption.bold())
+                    .foregroundStyle(.green)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(
+                        Capsule()
+                            .fill(Color.green.opacity(0.14))
+                    )
+            }
+
+            HStack(spacing: 12) {
+                actionButton(title: "새로고침", systemImage: "arrow.clockwise", tint: .blue) {
+                    store.reloadSamplePhrases()
+                    showRefreshAlert = true
+                }
+
+                actionButton(title: "업데이트", systemImage: "square.and.arrow.down.fill", tint: .teal) {
+                    showUpdateSheet = true
+                }
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(Color(.secondarySystemBackground))
+        )
+    }
+
+    private func actionButton(title: String, systemImage: String, tint: Color, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Label(title, systemImage: systemImage)
+                .font(.subheadline.bold())
+                .foregroundStyle(tint)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(tint.opacity(0.12))
+                )
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var categoryGrid: some View {
+        let regularCategories = PhraseCategory.allCases.filter { !featuredCategories.contains($0) }
+
+        return VStack(alignment: .leading, spacing: 12) {
+            Text("전체 카테고리")
+                .font(.title3.bold())
 
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 14) {
-                ForEach(PhraseCategory.allCases) { category in
+                ForEach(regularCategories) { category in
                     NavigationLink {
                         CategoryView(category: category)
                     } label: {
@@ -78,47 +143,63 @@ struct HomeView: View {
         }
     }
 
-    private var quickEntrySection: some View {
+    private var featuredCategorySection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionHeader(
-                title: "빠른 진입",
-                subtitle: "즐겨찾기, 전체 검색, 프리미엄으로 빠르게 이동합니다."
-            )
+            HStack {
+                Text("새로 추가된 카테고리")
+                    .font(.title3.bold())
 
-            HStack(spacing: 12) {
-                quickEntryLink(title: "즐겨찾기", systemImage: "star.fill", tint: .yellow) {
-                    FavoritesView()
-                }
+                Spacer()
 
-                quickEntryLink(title: "전체 검색", systemImage: "magnifyingglass", tint: .blue) {
-                    SearchView()
-                }
+                Text("추천")
+                    .font(.caption.bold())
+                    .foregroundStyle(.blue)
+                    .padding(.horizontal, 9)
+                    .padding(.vertical, 5)
+                    .background(
+                        Capsule()
+                            .fill(Color.blue.opacity(0.12))
+                    )
+            }
 
-                quickEntryLink(title: "프리미엄", systemImage: "crown.fill", tint: .orange) {
-                    PremiumPlaceholderView()
+            Text("분실 신고, 통신 문제, 세탁 같은 자주 막히는 상황을 먼저 꺼내 둘 수 있게 위쪽으로 올렸습니다.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+
+            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 14) {
+                ForEach(featuredCategories) { category in
+                    NavigationLink {
+                        CategoryView(category: category)
+                    } label: {
+                        CategoryButton(category: category, isFeatured: true)
+                    }
+                    .buttonStyle(.plain)
                 }
             }
         }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(Color(.secondarySystemBackground))
+        )
     }
 
     private var quickInfoSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionHeader(
-                title: "빠른 안내",
-                subtitle: "위험 상황은 홈과 목록에서 더 강하게 강조했습니다."
-            )
+            Text("빠른 안내")
+                .font(.title3.bold())
 
             VStack(spacing: 12) {
                 placeholderCard(
                     title: "응급 문장 바로가기",
-                    subtitle: "위험 상황 카테고리는 빨간 강조선으로 더 눈에 띄게 표시됩니다.",
+                    subtitle: "위험 상황 카테고리는 눈에 띄는 빨간색으로 강조했습니다.",
                     systemImage: "exclamationmark.shield.fill",
                     tint: .red
                 )
 
                 placeholderCard(
                     title: "광고 영역 Placeholder",
-                    subtitle: "향후 배너 광고나 공지 노출 영역으로 확장할 수 있습니다.",
+                    subtitle: "향후 배너 광고나 공지 노출 위치로 사용할 수 있습니다.",
                     systemImage: "rectangle.center.inset.filled.badge.plus",
                     tint: .gray
                 )
@@ -128,15 +209,13 @@ struct HomeView: View {
 
     private var futureSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionHeader(
-                title: "향후 확장 자리",
-                subtitle: "MVP 이후 붙일 기능 구조를 미리 잡아 두었습니다."
-            )
+            Text("향후 확장 자리")
+                .font(.title3.bold())
 
             VStack(spacing: 12) {
                 placeholderCard(
                     title: "AI 상황 추천",
-                    subtitle: "현재 맥락에 맞는 문장을 추천하는 확장 기능 자리입니다.",
+                    subtitle: "사용 상황에 맞는 문장 묶음을 추천하는 기능 자리입니다.",
                     systemImage: "sparkles.rectangle.stack.fill",
                     tint: .indigo
                 )
@@ -149,29 +228,6 @@ struct HomeView: View {
                 )
             }
         }
-    }
-
-    private func quickEntryLink<Destination: View>(title: String, systemImage: String, tint: Color, @ViewBuilder destination: () -> Destination) -> some View {
-        NavigationLink {
-            destination()
-        } label: {
-            VStack(spacing: 10) {
-                Image(systemName: systemImage)
-                    .font(.title2.weight(.bold))
-                    .foregroundStyle(.white)
-                    .frame(width: 48, height: 48)
-                    .background(tint.gradient, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-
-                Text(title)
-                    .font(.subheadline.bold())
-                    .multilineTextAlignment(.center)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 16)
-            .padding(.horizontal, 10)
-            .appCardStyle()
-        }
-        .buttonStyle(.plain)
     }
 
     private func placeholderCard(title: String, subtitle: String, systemImage: String, tint: Color) -> some View {
@@ -194,6 +250,47 @@ struct HomeView: View {
             Spacer()
         }
         .padding()
-        .appCardStyle(tint: tint)
+        .background(
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .fill(Color(.secondarySystemBackground))
+        )
+    }
+}
+
+private struct UpdateSummaryView: View {
+    @EnvironmentObject private var store: PhraseStore
+    @Environment(\.dismiss) private var dismiss
+
+    private let newestCategories = ["공항/입국", "호텔/숙소", "쇼핑", "은행/결제", "길 묻기"]
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section("현재 앱 데이터") {
+                    Label("\(store.categoryCount)개 카테고리", systemImage: "square.grid.2x2.fill")
+                    Label("\(store.phraseCount)개 문장", systemImage: "text.bubble.fill")
+                }
+
+                Section("최근 추가된 카테고리") {
+                    ForEach(newestCategories, id: \.self) { category in
+                        Text(category)
+                    }
+                }
+
+                Section("안내") {
+                    Text("업데이트 버튼은 이번에 확장된 문장과 카테고리 현황을 바로 확인할 수 있게 해줍니다.")
+                    Text("새로고침 버튼을 누르면 현재 앱에 들어 있는 문장을 다시 불러옵니다.")
+                }
+            }
+            .navigationTitle("업데이트")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("닫기") {
+                        dismiss()
+                    }
+                }
+            }
+        }
     }
 }

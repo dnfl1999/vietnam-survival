@@ -186,6 +186,48 @@ enum SamplePhrases {
         Phrase(id: "price_27", category: .priceNegotiation, korean: "포장도 해주시나요?", vietnamese: "Có đóng gói giúp tôi không?", vietnamesePlain: "Co dong goi giup toi khong?", isEmergency: false),
         Phrase(id: "price_28", category: .priceNegotiation, korean: "현금영수증 같은 증빙이 필요해요", vietnamese: "Tôi cần giấy xác nhận thanh toán.", vietnamesePlain: "Toi can giay xac nhan thanh toan.", isEmergency: false),
 
+        // 경찰/분실
+        Phrase(id: "police_1", category: .policeLostItem, korean: "경찰서를 찾고 있어요", vietnamese: "Tôi đang tìm đồn cảnh sát.", vietnamesePlain: "Toi dang tim don canh sat.", isEmergency: false),
+        Phrase(id: "police_2", category: .policeLostItem, korean: "분실 신고를 하고 싶어요", vietnamese: "Tôi muốn khai báo mất đồ.", vietnamesePlain: "Toi muon khai bao mat do.", isEmergency: false),
+        Phrase(id: "police_3", category: .policeLostItem, korean: "가방을 잃어버렸어요", vietnamese: "Tôi bị mất túi xách.", vietnamesePlain: "Toi bi mat tui xach.", isEmergency: false),
+        Phrase(id: "police_4", category: .policeLostItem, korean: "지갑을 도난당했어요", vietnamese: "Ví của tôi bị lấy mất.", vietnamesePlain: "Vi cua toi bi lay mat.", isEmergency: false),
+        Phrase(id: "police_5", category: .policeLostItem, korean: "휴대폰을 잃어버렸어요", vietnamese: "Tôi bị mất điện thoại.", vietnamesePlain: "Toi bi mat dien thoai.", isEmergency: false),
+        Phrase(id: "police_6", category: .policeLostItem, korean: "여권을 잃어버렸어요", vietnamese: "Tôi bị mất hộ chiếu.", vietnamesePlain: "Toi bi mat ho chieu.", isEmergency: true),
+        Phrase(id: "police_7", category: .policeLostItem, korean: "도난당한 장소를 지도에서 보여드릴게요", vietnamese: "Tôi sẽ chỉ vị trí bị mất trộm trên bản đồ.", vietnamesePlain: "Toi se chi vi tri bi mat trom tren ban do.", isEmergency: false),
+        Phrase(id: "police_8", category: .policeLostItem, korean: "신고 확인서를 받을 수 있나요?", vietnamese: "Tôi có thể nhận giấy xác nhận được không?", vietnamesePlain: "Toi co the nhan giay xac nhan duoc khong?", isEmergency: false),
+        Phrase(id: "police_9", category: .policeLostItem, korean: "통역이 필요해요", vietnamese: "Tôi cần thông dịch.", vietnamesePlain: "Toi can thong dich.", isEmergency: false),
+        Phrase(id: "police_10", category: .policeLostItem, korean: "CCTV 확인이 가능할까요?", vietnamese: "Có thể kiểm tra camera được không?", vietnamesePlain: "Co the kiem tra camera duoc khong?", isEmergency: false),
+        Phrase(id: "police_11", category: .policeLostItem, korean: "카드를 바로 정지해야 해요", vietnamese: "Tôi cần khóa thẻ ngay.", vietnamesePlain: "Toi can khoa the ngay.", isEmergency: false),
+        Phrase(id: "police_12", category: .policeLostItem, korean: "한국 대사관 연락처가 필요해요", vietnamese: "Tôi cần thông tin liên lạc của Đại sứ quán Hàn Quốc.", vietnamesePlain: "Toi can thong tin lien lac cua Dai su quan Han Quoc.", isEmergency: false),
+
+        // 유심/통신
+        Phrase(id: "sim_1", category: .simInternet, korean: "유심을 사고 싶어요", vietnamese: "Tôi muốn mua SIM.", vietnamesePlain: "Toi muon mua SIM.", isEmergency: false),
+        Phrase(id: "sim_2", category: .simInternet, korean: "eSIM도 있나요?", vietnamese: "Có eSIM không?", vietnamesePlain: "Co eSIM khong?", isEmergency: false),
+        Phrase(id: "sim_3", category: .simInternet, korean: "데이터가 안 터져요", vietnamese: "Dữ liệu di động không hoạt động.", vietnamesePlain: "Du lieu di dong khong hoat dong.", isEmergency: false),
+        Phrase(id: "sim_4", category: .simInternet, korean: "인터넷이 너무 느려요", vietnamese: "Mạng Internet quá chậm.", vietnamesePlain: "Mang Internet qua cham.", isEmergency: false),
+        Phrase(id: "sim_5", category: .simInternet, korean: "전화는 되는데 데이터가 안 돼요", vietnamese: "Tôi gọi được nhưng không dùng được dữ liệu.", vietnamesePlain: "Toi goi duoc nhung khong dung duoc du lieu.", isEmergency: false),
+        Phrase(id: "sim_6", category: .simInternet, korean: "개통을 도와주세요", vietnamese: "Làm ơn giúp tôi kích hoạt.", vietnamesePlain: "Lam on giup toi kich hoat.", isEmergency: false),
+        Phrase(id: "sim_7", category: .simInternet, korean: "이 번호를 계속 쓸 수 있나요?", vietnamese: "Tôi có thể tiếp tục dùng số này không?", vietnamesePlain: "Toi co the tiep tuc dung so nay khong?", isEmergency: false),
+        Phrase(id: "sim_8", category: .simInternet, korean: "데이터를 추가 충전하고 싶어요", vietnamese: "Tôi muốn nạp thêm dữ liệu.", vietnamesePlain: "Toi muon nap them du lieu.", isEmergency: false),
+        Phrase(id: "sim_9", category: .simInternet, korean: "핫스팟을 써도 되나요?", vietnamese: "Tôi dùng điểm phát sóng được không?", vietnamesePlain: "Toi dung diem phat song duoc khong?", isEmergency: false),
+        Phrase(id: "sim_10", category: .simInternet, korean: "와이파이에 연결이 안 돼요", vietnamese: "Tôi không kết nối được Wi-Fi.", vietnamesePlain: "Toi khong ket noi duoc Wi-Fi.", isEmergency: false),
+        Phrase(id: "sim_11", category: .simInternet, korean: "비밀번호를 한 번 더 적어주세요", vietnamese: "Viết lại mật khẩu giúp tôi một lần nữa.", vietnamesePlain: "Viet lai mat khau giup toi mot lan nua.", isEmergency: false),
+        Phrase(id: "sim_12", category: .simInternet, korean: "충전 가능한 요금제가 뭐가 있나요?", vietnamese: "Có những gói nạp nào?", vietnamesePlain: "Co nhung goi nap nao?", isEmergency: false),
+
+        // 화장실/세탁
+        Phrase(id: "restroom_1", category: .restroomLaundry, korean: "화장실이 어디예요?", vietnamese: "Nhà vệ sinh ở đâu?", vietnamesePlain: "Nha ve sinh o dau?", isEmergency: false),
+        Phrase(id: "restroom_2", category: .restroomLaundry, korean: "휴지가 없어요", vietnamese: "Không có giấy vệ sinh.", vietnamesePlain: "Khong co giay ve sinh.", isEmergency: false),
+        Phrase(id: "restroom_3", category: .restroomLaundry, korean: "비누가 없어요", vietnamese: "Không có xà phòng.", vietnamesePlain: "Khong co xa phong.", isEmergency: false),
+        Phrase(id: "restroom_4", category: .restroomLaundry, korean: "세탁 서비스를 이용하고 싶어요", vietnamese: "Tôi muốn dùng dịch vụ giặt đồ.", vietnamesePlain: "Toi muon dung dich vu giat do.", isEmergency: false),
+        Phrase(id: "restroom_5", category: .restroomLaundry, korean: "오늘 맡기면 언제 받을 수 있나요?", vietnamese: "Nếu gửi hôm nay thì khi nào tôi nhận được?", vietnamesePlain: "Neu gui hom nay thi khi nao toi nhan duoc?", isEmergency: false),
+        Phrase(id: "restroom_6", category: .restroomLaundry, korean: "급해서 빨리 세탁해 주세요", vietnamese: "Tôi cần gấp, làm ơn giặt nhanh giúp tôi.", vietnamesePlain: "Toi can gap, lam on giat nhanh giup toi.", isEmergency: false),
+        Phrase(id: "restroom_7", category: .restroomLaundry, korean: "드라이클리닝도 되나요?", vietnamese: "Có giặt khô không?", vietnamesePlain: "Co giat kho khong?", isEmergency: false),
+        Phrase(id: "restroom_8", category: .restroomLaundry, korean: "이 옷은 따로 세탁해 주세요", vietnamese: "Làm ơn giặt riêng bộ đồ này.", vietnamesePlain: "Lam on giat rieng bo do nay.", isEmergency: false),
+        Phrase(id: "restroom_9", category: .restroomLaundry, korean: "옷이 아직 안 마른 것 같아요", vietnamese: "Hình như quần áo vẫn chưa khô.", vietnamesePlain: "Hinh nhu quan ao van chua kho.", isEmergency: false),
+        Phrase(id: "restroom_10", category: .restroomLaundry, korean: "얼룩 제거도 가능한가요?", vietnamese: "Có thể tẩy vết bẩn không?", vietnamesePlain: "Co the tay vet ban khong?", isEmergency: false),
+        Phrase(id: "restroom_11", category: .restroomLaundry, korean: "세탁비가 얼마예요?", vietnamese: "Phí giặt là bao nhiêu?", vietnamesePlain: "Phi giat la bao nhieu?", isEmergency: false),
+        Phrase(id: "restroom_12", category: .restroomLaundry, korean: "수건을 새것으로 바꿔 주세요", vietnamese: "Làm ơn đổi khăn mới cho tôi.", vietnamesePlain: "Lam on doi khan moi cho toi.", isEmergency: false),
+
         // 위험 상황
         Phrase(id: "emergency_1", category: .emergency, korean: "도와주세요", vietnamese: "Làm ơn cứu tôi.", vietnamesePlain: "Lam on cuu toi.", isEmergency: true),
         Phrase(id: "emergency_2", category: .emergency, korean: "경찰 불러주세요", vietnamese: "Làm ơn gọi cảnh sát.", vietnamesePlain: "Lam on goi canh sat.", isEmergency: true),

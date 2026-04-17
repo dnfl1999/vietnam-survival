@@ -187,6 +187,13 @@ select {
   line-height: 1.02;
 }
 
+.home-header h2 {
+  font-size: 1.38rem;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+}
+
 .icon-button {
   width: 42px;
   height: 42px;
@@ -198,6 +205,7 @@ select {
 }
 
 .hero-card,
+.update-card,
 .toolbar-card,
 .premium-card,
 .category-card,
@@ -216,6 +224,62 @@ select {
   background:
     linear-gradient(135deg, rgba(47, 109, 246, 0.14), rgba(15, 154, 144, 0.08)),
     var(--surface);
+}
+
+.update-card {
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(24, 160, 110, 0.12), rgba(47, 109, 246, 0.07)),
+    var(--surface);
+}
+
+.update-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.update-top h3 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+.update-badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(24, 160, 110, 0.12);
+  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.update-copy {
+  margin: 12px 0 14px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.update-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.update-action {
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 16px;
+  background: rgba(29, 31, 35, 0.06);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.update-action.primary {
+  background: var(--teal);
+  color: white;
 }
 
 .hero-title {
@@ -310,6 +374,25 @@ select {
 .phrase-card h4 {
   margin: 6px 0 6px;
   font-size: 1.05rem;
+}
+
+.category-card.featured {
+  border: 1px solid rgba(15, 154, 144, 0.18);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(232, 246, 241, 0.92));
+}
+
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(15, 154, 144, 0.12);
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
 }
 
 .category-meta {
@@ -554,8 +637,16 @@ select {
     font-size: 1.6rem;
   }
 
+  .home-header h2 {
+    font-size: 1.24rem;
+  }
+
   .hero-stats,
   .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .update-actions {
     grid-template-columns: 1fr;
   }
 }

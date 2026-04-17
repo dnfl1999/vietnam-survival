@@ -7,6 +7,13 @@ final class PhraseStore: ObservableObject {
         self.phrases = phrases
     }
 
+    var phraseCount: Int { phrases.count }
+    var categoryCount: Int { PhraseCategory.allCases.count }
+
+    func reloadSamplePhrases() {
+        phrases = SamplePhrases.all
+    }
+
     func phrases(for category: PhraseCategory) -> [Phrase] {
         phrases.filter { $0.category == category }
     }
@@ -17,7 +24,6 @@ final class PhraseStore: ObservableObject {
             .sorted { $0.korean < $1.korean }
     }
 
-    // 한국어 기준을 우선하면서 베트남어와 성조 없는 버전도 함께 검색합니다.
     func searchPhrases(query: String) -> [Phrase] {
         let trimmedQuery = query.trimmingCharacters(in: .whitespacesAndNewlines)
 

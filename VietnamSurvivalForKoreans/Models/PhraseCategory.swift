@@ -8,6 +8,9 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
     case shopping
     case bankingPayment
     case directions
+    case policeLostItem
+    case simInternet
+    case restroomLaundry
     case foodOrder
     case priceNegotiation
     case emergency
@@ -24,6 +27,9 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         case .shopping: return "쇼핑"
         case .bankingPayment: return "은행/결제"
         case .directions: return "길 묻기"
+        case .policeLostItem: return "경찰/분실"
+        case .simInternet: return "유심/통신"
+        case .restroomLaundry: return "화장실/세탁"
         case .foodOrder: return "음식 주문"
         case .priceNegotiation: return "가격 흥정"
         case .emergency: return "위험 상황"
@@ -40,6 +46,9 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         case .shopping: return "bag.fill"
         case .bankingPayment: return "creditcard.fill"
         case .directions: return "map.fill"
+        case .policeLostItem: return "shield.fill"
+        case .simInternet: return "antenna.radiowaves.left.and.right"
+        case .restroomLaundry: return "washer.fill"
         case .foodOrder: return "fork.knife"
         case .priceNegotiation: return "tag.fill"
         case .emergency: return "exclamationmark.triangle.fill"
@@ -56,6 +65,9 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         case .shopping: return .pink
         case .bankingPayment: return .brown
         case .directions: return .purple
+        case .policeLostItem: return .blue
+        case .simInternet: return .cyan
+        case .restroomLaundry: return .mint
         case .foodOrder: return .orange
         case .priceNegotiation: return .teal
         case .emergency: return .red
@@ -72,6 +84,9 @@ enum PhraseCategory: String, CaseIterable, Codable, Identifiable {
         case .shopping: return "옷, 기념품, 생필품 구매 표현"
         case .bankingPayment: return "ATM, 카드, 송금 관련 표현"
         case .directions: return "장소 찾기와 위치 확인 표현"
+        case .policeLostItem: return "분실 신고와 도움 요청 표현"
+        case .simInternet: return "유심, 데이터, 통신 문제 표현"
+        case .restroomLaundry: return "화장실 위치와 세탁 요청 표현"
         case .foodOrder: return "식당과 배달 주문 표현"
         case .priceNegotiation: return "시장과 상점 흥정 표현"
         case .emergency: return "급한 상황에서 바로 사용"

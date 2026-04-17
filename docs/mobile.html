@@ -38,7 +38,7 @@
           <div class="device-screen">
             <main class="screen-content">
               <section class="page is-active" data-page="home">
-                <div class="page-header">
+                <div class="page-header home-header">
                   <div>
                     <p class="eyebrow">Vietnam Survival</p>
                     <h2>급할 때 바로 보여주는 생존 문장</h2>
@@ -69,10 +69,39 @@
                 </section>
 
                 <section class="section-block">
+                  <div class="update-card">
+                    <div class="update-top">
+                      <div>
+                        <p class="eyebrow">Content Update</p>
+                        <h3>최신 콘텐츠가 들어간 홈</h3>
+                      </div>
+                      <span class="update-badge">LATEST</span>
+                    </div>
+                    <p class="update-copy">
+                      현재 <strong id="updateCategoryCount">0</strong>개 카테고리, <strong id="updatePhraseCount">0</strong>개 문장을 반영한 상태입니다.
+                    </p>
+                    <div class="update-actions">
+                      <button class="update-action" id="refreshHomeButton">새로고침</button>
+                      <button class="update-action primary" id="showUpdatesButton">업데이트</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-block">
+                  <div class="section-header">
+                    <div>
+                      <p class="eyebrow">Featured</p>
+                      <h3>새로 추가된 카테고리</h3>
+                    </div>
+                  </div>
+                  <div id="featuredCategoryGrid" class="category-grid"></div>
+                </section>
+
+                <section class="section-block">
                   <div class="section-header">
                     <div>
                       <p class="eyebrow">Categories</p>
-                      <h3>상황 카테고리</h3>
+                      <h3>전체 카테고리</h3>
                     </div>
                   </div>
                   <div id="categoryGrid" class="category-grid"></div>

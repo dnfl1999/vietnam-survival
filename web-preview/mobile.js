@@ -8,7 +8,14 @@ const colorMap = {
   teal: "#0f9a90",
   red: "#d54f4f",
   indigo: "#5a66da",
+  cyan: "#1d9db5",
+  mint: "#2e9f83",
+  pink: "#d4638d",
+  brown: "#8a6138",
+  purple: "#7856d8",
 };
+
+const featuredCategoryIds = ["policeLostItem", "simInternet", "restroomLaundry"];
 
 const categoryMap = new Map(data.categories.map((category) => [category.id, category]));
 
@@ -20,6 +27,7 @@ const state = {
 };
 
 const categoryGrid = document.querySelector("#categoryGrid");
+const featuredCategoryGrid = document.querySelector("#featuredCategoryGrid");
 const categoryFilter = document.querySelector("#categoryFilter");
 const searchInput = document.querySelector("#searchInput");
 const searchResults = document.querySelector("#searchResults");
@@ -55,6 +63,16 @@ function bindHomeActions() {
     categoryFilter.value = "all";
     setActiveTab("search");
     renderSearch();
+  });
+
+  document.querySelector("#refreshHomeButton").addEventListener("click", () => {
+    populateStats();
+    renderHome();
+    window.alert(`최신 콘텐츠를 다시 불러왔습니다. 현재 ${data.categories.length}개 카테고리, ${data.phrases.length}개 문장입니다.`);
+  });
+
+  document.querySelector("#showUpdatesButton").addEventListener("click", () => {
+    openUpdatesDialog();
   });
 
   document.querySelectorAll("[data-jump-tab]").forEach((button) => {
@@ -109,6 +127,8 @@ function setActiveTab(tab) {
 function populateStats() {
   document.querySelector("#categoryCount").textContent = String(data.categories.length);
   document.querySelector("#phraseCount").textContent = String(data.phrases.length);
+  document.querySelector("#updateCategoryCount").textContent = String(data.categories.length);
+  document.querySelector("#updatePhraseCount").textContent = String(data.phrases.length);
   document.querySelector("#emergencyCount").textContent = String(
     data.phrases.filter((phrase) => phrase.isEmergency).length
   );
@@ -125,15 +145,29 @@ function populateCategoryFilter() {
 
 function renderHome() {
   categoryGrid.innerHTML = "";
+  featuredCategoryGrid.innerHTML = "";
 
-  data.categories.forEach((category) => {
+  const featuredCategories = data.categories.filter((category) => featuredCategoryIds.includes(category.id));
+  const regularCategories = data.categories.filter((category) => !featuredCategoryIds.includes(category.id));
+
+  featuredCategories.forEach((category) => {
+    featuredCategoryGrid.append(buildCategoryCard(category, true));
+  });
+
+  regularCategories.forEach((category) => {
+    categoryGrid.append(buildCategoryCard(category, false));
+  });
+}
+
+function buildCategoryCard(category, featured) {
     const count = data.phrases.filter((phrase) => phrase.category === category.id).length;
     const button = document.createElement("button");
-    button.className = "category-card";
+    button.className = `category-card ${featured ? "featured" : ""}`;
     button.innerHTML = `
       <p class="eyebrow">${category.systemImage}</p>
       <h4>${category.title}</h4>
       <p>${category.shortDescription}</p>
+      ${featured ? '<span class="category-badge">NEW</span>' : ""}
       <div class="category-meta">
         <span>${count}개 문장</span>
         <span style="color:${colorMap[category.accentColor]}">열기</span>
@@ -145,8 +179,7 @@ function renderHome() {
       setActiveTab("search");
       renderSearch();
     });
-    categoryGrid.append(button);
-  });
+    return button;
 }
 
 function renderSearch() {
@@ -273,6 +306,38 @@ function openDialog(phrase) {
   actions.append(
     createActionButton("음성 크게 재생", () => speakPhrase(phrase.vietnamese), true, colorMap[category.accentColor]),
     createActionButton("복사", async () => copyPhrase(phrase.vietnamese))
+  );
+
+  dialog.showModal();
+}
+
+function openUpdatesDialog() {
+  const newest = data.categories.filter((category) => featuredCategoryIds.includes(category.id));
+  dialogContent.innerHTML = `
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow">Latest Update</p>
+        <h3>최신 홈 화면 안내</h3>
+      </div>
+      <div class="chip">총 ${data.categories.length}개 카테고리</div>
+    </div>
+    <div class="dialog-display">
+      <div class="vietnamese">${data.phrases.length}개 문장 반영</div>
+      <div class="plain">새 카테고리: ${newest.map((category) => category.title).join(", ")}</div>
+      <div class="korean">이 프리뷰는 최신 앱 홈 구조를 기준으로 갱신됐습니다.</div>
+    </div>
+    <div class="dialog-actions"></div>
+  `;
+
+  const actions = dialogContent.querySelector(".dialog-actions");
+  actions.append(
+    createActionButton("전체 문장 보기", () => {
+      dialog.close();
+      state.selectedCategory = "all";
+      categoryFilter.value = "all";
+      setActiveTab("search");
+      renderSearch();
+    }, true, colorMap.teal)
   );
 
   dialog.showModal();

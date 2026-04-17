@@ -7,6 +7,13 @@ final class PhraseStore: ObservableObject {
         self.phrases = phrases
     }
 
+    var phraseCount: Int { phrases.count }
+    var categoryCount: Int { PhraseCategory.allCases.count }
+
+    func reloadSamplePhrases() {
+        phrases = SamplePhrases.all
+    }
+
     func phrases(for category: PhraseCategory) -> [Phrase] {
         phrases.filter { $0.category == category }
     }
