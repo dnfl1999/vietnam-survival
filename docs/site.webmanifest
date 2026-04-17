@@ -1,6 +1,6 @@
 {
   "name": "Vietnam Survival",
-  "short_name": "Vietnam Survival",
+  "short_name": "Viet Survival",
   "description": "상황별 문장을 빠르게 찾고 크게 보여주는 베트남 생존 표현집",
   "start_url": "./mobile.html",
   "scope": "./",
